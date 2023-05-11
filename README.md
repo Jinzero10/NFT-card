@@ -7,4 +7,4 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ### Links
 
 - Solution URL: [SOLUTION](https://github.com/Jinzero10/NFT-card.git)
-- Live Site URL: [LIVE SITE](https://your-live-site-url.com)
+- Live Site URL: [LIVE SITE](https://nft-card-jinzero.netlify.app/)
