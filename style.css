@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    /*Primary*/
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+    /*Neutral*/
+
+--M-bg-dark-blue: hsl(217, 54%, 11%);
+--C-bg-dark-blue: hsl(216, 50%, 16%);
+--line-dark-blue: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    background-color: var(--M-bg-dark-blue);
+}
+a{
+    text-decoration: none;
+}
+div, picture, footer, h1{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    place-items: left;
+    gap: 1.5rem;
+    max-width: 22rem;
+    background-color: var(--C-bg-dark-blue);
+    border-radius: 15px;
+}
+.container{
+    position: relative;
+    margin-top: 1.5rem;
+    max-width: 19rem;
+    border-radius: 8px;
+    place-items: center;
+}
+.nft_img{
+    display: block;
+    max-width: 19rem;
+    border-radius: 8px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .3s ease;
+    border-radius: 8px;
+    background:  linear-gradient(to left, rgba(0,255,247,0.5) -26.48%, rgba(0,255,247,0.5) 73.52%);
+}
+.overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+.container:hover .overlay {
+    opacity: 1;
+}
+h1 a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--White);
+}
+hr{
+    height: 1px;
+    background-color: var(--line-dark-blue);
+    border: none;
+}
+.ethereum_value{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.icon{
+    width: 0.9rem;
+    margin-right: 0.2rem;
+    vertical-align: -20%;
+}
+.ethereum{
+    color: var(--Cyan);
+ }
+.clock{
+    width: 1.3rem;
+}
+.time{
+    font-size: 1rem;
+}
+p, .time, footer{
+    color: var(--Soft-blue);
+}
+.profile_picture{
+    width: 2rem;
+    border: 1px solid var(--White);
+    vertical-align: -40%;
+    margin-right: 0.7rem;
+    border-radius: 50%;
+}
+.profile_name a{
+    color: var(--White);
+}
+a:hover{
+    color: var(--Cyan);
+}
+footer{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
